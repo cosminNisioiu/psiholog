@@ -18,6 +18,7 @@ declare let $: any;
 export class AppComponent implements OnInit {
     location: any;
     routerSubscription: any;
+    title = 'etism-ng';
 
     constructor(private router: Router) {
     }
