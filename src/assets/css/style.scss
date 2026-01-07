@@ -1633,6 +1633,7 @@ Main Banner Area CSS
     position: relative;
     z-index: 1;
     padding-top: 30px;
+    min-height: 350px;
     background: {
         position: center center;
         size: cover;
@@ -7956,4 +7957,17 @@ Go Top CSS
             weight: 700;
         };
     }
+}
+.mat-form-field {
+  width: 100%;
+}
+
+.mat-form-field-flex {
+  display: inline-flex !important;
+  align-items: center;
+}
+
+.mat-form-field-suffix {
+  display: inline-flex;
+  align-items: center;
 }

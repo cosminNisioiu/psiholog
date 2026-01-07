@@ -25,6 +25,7 @@ import { ContactComponent } from './components/pages/contact/contact.component';
 import { ErrorComponent } from './components/pages/error/error.component';
 import { ComingSoonComponent } from './components/pages/coming-soon/coming-soon.component';
 import { LiveTrackerComponent } from './components/pages/live-tracker/live-tracker.component';
+import { ServicesComponent } from './components/pages/services/services.component';
 
 const routes: Routes = [
     {path: '', component: HomeOneComponent},
@@ -33,7 +34,8 @@ const routes: Routes = [
     {path: 'home-four', component: HomeFourComponent},
     {path: 'home-five', component: HomeFiveComponent},
     {path: 'home-six', component: HomeSixComponent},
-    {path: 'about-one', component: AboutOneComponent},
+    {path: 'about', component: AboutOneComponent},
+    {path: 'services', component: ServicesComponent},
     {path: 'about-two', component: AboutTwoComponent},
     {path: 'prevention', component: PreventionComponent},
     {path: 'doctors', component: DoctorsComponent},

@@ -44,6 +44,7 @@ import { ProductsDetailsComponent } from './components/pages/products-details/pr
 import { ErrorComponent } from './components/pages/error/error.component';
 import { ComingSoonComponent } from './components/pages/coming-soon/coming-soon.component';
 import { LiveTrackerComponent } from './components/pages/live-tracker/live-tracker.component';
+import { ServicesComponent } from './components/pages/services/services.component';
 
 @NgModule({
   declarations: [
@@ -79,7 +80,8 @@ import { LiveTrackerComponent } from './components/pages/live-tracker/live-track
     ProductsDetailsComponent,
     ErrorComponent,
     ComingSoonComponent,
-    LiveTrackerComponent
+    LiveTrackerComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
