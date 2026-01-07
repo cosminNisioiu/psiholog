@@ -1,34 +1,15 @@
-import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { HttpClient } from '@angular/common/http';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-appointment',
-  templateUrl: './appointment.component.html'
+  templateUrl: './appointment.component.html',
+  styleUrls: ['./appointment.component.scss']
 })
-export class AppointmentComponent {
-  appointmentForm: FormGroup;
+export class AppointmentComponent implements OnInit {
 
-  constructor(private fb: FormBuilder, private http: HttpClient) {
-    this.appointmentForm = this.fb.group({
-      nume: ['', Validators.required],
-      prenume: ['', Validators.required],
-      telefon: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email]],
-      serviciu: ['', Validators.required],
-      data: ['', Validators.required]
-    });
+  constructor() { }
+
+  ngOnInit(): void {
   }
 
-  submit() {
-    if (this.appointmentForm.invalid) {
-      return;
-    }
-
-    this.http.post('https://your-backend-api/send-email', this.appointmentForm.value)
-      .subscribe({
-        next: () => alert('Email trimis cu succes'),
-        error: () => alert('Eroare la trimitere email')
-      });
-  }
 }
