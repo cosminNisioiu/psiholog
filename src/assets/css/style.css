@@ -134,7 +134,7 @@ p:last-child {
 .default-btn {
   position: relative;
   z-index: 1;
-  text-transform: capitalize;
+  text-transform: none;
   background-color: #4f87fb;
   color: #ffffff;
   border: 1px solid #4f87fb;

@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppointmentComponent implements OnInit {
 
+  now: Date = new Date();
+  selectedDate: Date = this.now;
+
   constructor() { }
 
   ngOnInit(): void {

@@ -47,10 +47,10 @@ Default CSS
 =================================================*/
 $font-family: 'Open Sans', sans-serif;
 $font-size: 15px;
-$main-color: #4f87fb;
-$black-color: #130947;
+$main-color: #504B38;
+$black-color: #000000;
 $white-color: #ffffff;
-$optional-color: #606060;
+$optional-color: #B9B28A;
 $transition: .5s;
 
 body {
@@ -89,7 +89,7 @@ img {
 p {
     margin-bottom: 15px;
     line-height: 1.8;
-    color: $optional-color;
+    color: $black-color;
 
     &:last-child {
         margin-bottom: 0;
@@ -133,7 +133,7 @@ p {
 .default-btn {
     position: relative;
     z-index: 1;
-    text-transform: capitalize;
+    text-transform: none;
     background-color: $main-color;
     color: $white-color;
     border: 1px solid $main-color;
@@ -154,21 +154,21 @@ p {
     }
     &:hover {
         color: $white-color;
-        border-color: $black-color;
-        background-color: $black-color;
+        border-color: $optional-color;
+        background-color: $optional-color;
     }
 }
 .optional-btn {
     position: relative;
     z-index: 1;
     text-transform: capitalize;
-    background-color: $black-color;
+    background-color: $main-color;
     color: $white-color;
     display: inline-block;
     transition: $transition;
     padding: 11.9px 25px 11.9px 50px;
     border-radius: 5px;
-    border: 1px solid $black-color;
+    border: 1px solid $main-color;
     font: {
         size: 14px;
         weight: 700;
@@ -182,11 +182,11 @@ p {
     }
     &:hover {
         color: $white-color;
-        background-color: $main-color;
-        border-color: $main-color;
+        background-color: $optional-color;
+        border-color: $optional-color;
 
         &::before {
-            border-color: $main-color;
+            border-color: $optional-color;
         }
     }
 }
@@ -323,7 +323,7 @@ Preloader Area CSS
 Header Area CSS
 =================================================*/
 .top-header {
-    background-color: #f5f8ff;
+    background-image: linear-gradient(to bottom, $optional-color 98%, rgba($optional-color, 0) 100%);
     padding: {
         top: 10px;
         bottom: 10px;
@@ -1032,14 +1032,14 @@ Header Area CSS
                     }
                 }
                 .default-btn {
-                    border-color: $black-color;
-                    background-color: $black-color;
+                    border-color: $main-color;
+                    background-color: $main-color;
                     color: $white-color;
 
                     &:hover {
-                        background-color: $main-color;
+                        background-color: $optional-color;
                         color: $white-color;
-                        border-color: $main-color;
+                        border-color: $optional-color;
                     }
                 }
             }
@@ -2121,7 +2121,8 @@ About Area CSS
         bottom: 40px;
     };
     img {
-        border-radius: 5px;
+        border-radius: 50%;
+        max-width: 80%;
 
         &:nth-child(2) {
             box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
@@ -3891,7 +3892,7 @@ Appointment Area CSS
 .appointment-form {
     max-width: 900px;
     background-color: $white-color;
-    box-shadow: 0px 8px 16px 0px rgba(146, 184, 255, 0.2);
+    box-shadow: 0px 8px 16px 0px rgb(181 174 138);
     padding: 50px;
     margin: {
         left: auto;
@@ -3922,7 +3923,7 @@ Appointment Area CSS
         .nice-select {
             float: unset;
             line-height: 48px;
-            color: $optional-color;
+            color: $black-color;
             text-transform: capitalize;
             border: none;
             background-color: #f5f5f5 !important;
@@ -7563,7 +7564,7 @@ Contact Area CSS
 Footer Area CSS
 =================================================*/
 .footer-area {
-    background-color: #130947;
+    background-color: $optional-color;
     padding-top: 100px;
     position: relative;
     z-index: 1;
@@ -7713,7 +7714,7 @@ Footer Area CSS
 }
 .footer-bottom-area {
     margin-top: 70px;
-    background-color: #07002b;
+    background-color: $main-color;
     padding: {
         top: 25px;
         bottom: 25px;
