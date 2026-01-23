@@ -127,7 +127,7 @@ p {
     padding-bottom: 70px;
 }
 .container {
-    max-width: 1230px;
+    max-width: 1650px;
 }
 /*default&optional-btn*/
 .default-btn {
@@ -361,7 +361,7 @@ Header Area CSS
 
     li {
         display: inline-block;
-        margin-right: 12px;
+        margin-right: 5px;
         color: $black-color;
         font-size: 14px;
         position: relative;
@@ -1636,11 +1636,14 @@ Main Banner Area CSS
     min-height: 350px;
     background: {
         position: center center;
-        size: cover;
-        repeat: no-repeat;
+        size: 100% auto;
+        repeat: no-repeat;  
     };
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &.banner-bg1 {
-        background-image: url(../../assets/img/main-banner1.jpg);
+        background-image: url(../../assets/img/main-banner1.png);
     }
     &.banner-bg2 {
         background-image: url(../../assets/img/main-banner2.jpg);
@@ -1649,22 +1652,48 @@ Main Banner Area CSS
         background-image: url(../../assets/img/main-banner3.jpg);
     }
     &.banner-bg4 {
-        background-image: url(../../assets/img/main-banner6.jpg);
+        background-image: url(../../assets/img/main-banner4.jpg);
     }
     &.banner-bg5 {
         background-image: url(../../assets/img/main-banner7.jpg);
     }
 }
+
+// Responsive banner heights
+@media (min-width: 768px) {
+    .main-banner {
+        min-height: 450px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-banner {
+        min-height: 600px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-banner {
+        min-height: 735px;
+    }
+}
 .main-banner-content {
+    width: 100%;
+    text-align: center;
+    padding: {
+        left: 20px;
+        right: 20px;
+    };
     .sub-title {
         color: $white-color;
-        display: block;
+        display: inline-block;
         position: relative;
         padding-left: 25px;
         font: {
             size: 18px;
             weight: 700;
         };
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
         &::before {
             width: 15px;
             height: 3px;
@@ -1686,13 +1715,20 @@ Main Banner Area CSS
             top: 12px;
             bottom: 18px;
         };
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        word-wrap: break-word;
     }
     p {
         color: $white-color;
         opacity: 0.95;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
     }
     .btn-box {
         margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
 
         .default-btn {
             border-color: $main-color;
@@ -1704,7 +1740,6 @@ Main Banner Area CSS
             }
         }
         .optional-btn {
-            margin-left: 15px;
             color: $black-color;
             border-color: $white-color;
             background-color: $white-color;
@@ -1776,7 +1811,7 @@ Main Banner Area CSS
         repeat: no-repeat;
     };
     &.banner-bg1 {
-        background-image: url(../../assets/img/main-banner1.jpg);
+        background-image: url(../../assets/img/main-banner1.png);
     }
     &.banner-bg2 {
         background-image: url(../../assets/img/main-banner2.jpg);
@@ -7069,7 +7104,7 @@ Widget Sidebar CSS
         height: 400px;
         text-align: center;
         background: {
-            image: url(../../assets/img/main-banner1.jpg);
+            image: url(../../assets/img/main-banner1.png);
             position: center center;
             size: cover;
             repeat: no-repeat;
@@ -7341,7 +7376,7 @@ Error 404 Area CSS
             }
         }
         h1 {
-            background: url(../../assets/img/main-banner1.jpg) no-repeat;
+            background: url(../../assets/img/main-banner1.png) no-repeat;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-size: cover;
@@ -7672,6 +7707,8 @@ Footer Area CSS
             span {
                 font-weight: 600;
                 color: $white-color;
+                display: inline-block;
+                min-width: 75px;
             }
             a {
                 color: #f8f8f8;
@@ -7698,6 +7735,8 @@ Footer Area CSS
             span {
                 font-weight: 600;
                 color: $white-color;
+                display: inline-block;
+                min-width: 70px;
             }
             a {
                 color: #f8f8f8;

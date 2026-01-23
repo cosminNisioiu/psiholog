@@ -1626,7 +1626,7 @@ Main Banner Area CSS
 }
 
 .main-banner.banner-bg1 {
-  background-image: url(../../assets/img/main-banner1.jpg);
+  background-image: url(../../assets/img/main-banner1.png);
 }
 
 .main-banner.banner-bg2 {
@@ -1760,7 +1760,7 @@ Main Banner Area CSS
 }
 
 .banner-section.banner-bg1 {
-  background-image: url(../../assets/img/main-banner1.jpg);
+  background-image: url(../../assets/img/main-banner1.png);
 }
 
 .banner-section.banner-bg2 {
@@ -7176,7 +7176,7 @@ Widget Sidebar CSS
   border-radius: 5px;
   height: 400px;
   text-align: center;
-  background-image: url(../../assets/img/main-banner1.jpg);
+  background-image: url(../../assets/img/main-banner1.png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -7482,7 +7482,7 @@ Error 404 Area CSS
 }
 
 .error-404-area .notfound h1 {
-  background: url(../../assets/img/main-banner1.jpg) no-repeat;
+  background: url(../../assets/img/main-banner1.png) no-repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: cover;
