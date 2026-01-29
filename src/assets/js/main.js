@@ -60,6 +60,21 @@
 			"<i class='flaticon-right'></i>"
 		],
 	});
+
+	// Testimonials Slides
+	$('.testimonials-slides').owlCarousel({
+		loop: true,
+		nav: true,
+		dots: true,
+		autoplayHoverPause: true,
+		autoplay: true,
+		items: 1,
+		margin: 30,
+		navText: [
+			"<i class='flaticon-left'></i>",
+			"<i class='flaticon-right'></i>"
+		],
+	});
 	$(".home-slides, .home-slides-two").on("translate.owl.carousel", function(){
 		$(".main-banner-content .sub-title").removeClass("animated fadeInUp").css("opacity", "0");
 		$(".main-banner-content h1").removeClass("animated fadeInUp").css("opacity", "0");
